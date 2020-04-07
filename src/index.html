@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Rapid Image Layers Animation | Codrops</title>
+		<meta name="description" content="A rapid layers animation of images as a splash intro for a website" />
+		<meta name="keywords" content="splash, intro, website, animation, image layers, rapid, loading, web design, css, javascript" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" href="https://use.typekit.net/idd0zbe.css">
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+		<!--script src="//tympanus.net/codrops/adpacks/analytics.js"></script-->
+	</head>
+	<body class="loading">
+		<main class="intro">
+			<div class="frame">
+				<h1 class="frame__title">Rapid image layers animation</h1>
+				<div class="frame__links">
+					<a href="">Article</a>
+					<a href="">GitHub</a>
+				</div>
+				<p class="frame__info">Click the middle menu item to see the effect.</p>
+			</div>
+			<div class="content">
+				<div class="grid">
+					<div class="grid__item grid__item--a" style="background-image:url(img/3.jpg)"></div>
+					<div class="grid__item grid__item--b" style="background-image:url(img/2.jpg)"></div>
+					<div class="grid__item grid__item--c" style="background-image:url(img/10.jpg)"></div>
+					<div class="grid__item grid__item--d" style="background-image:url(img/5.jpg)"></div>
+					<div class="grid__item grid__item--e" style="background-image:url(img/8.jpg)"></div>
+					<div class="grid__item grid__item--f" style="background-image:url(img/6.jpg)"></div>
+				</div>
+				<nav class="menu">
+					<a class="menu__item">
+						<h2 class="menu__item-title">Underground</h2>
+						<p class="menu__item-subtitle">Hey, dreamypie, wake up!</p>
+					</a>
+					<a class="menu__item menu__item--current">
+						<h2 class="menu__item-title">Commotion</h2>
+						<p class="menu__item-subtitle">Yo, sleepyhead! What's up?</p>
+					</a>
+					<a class="menu__item">
+						<h2 class="menu__item-title">Interrogation</h2>
+						<p class="menu__item-subtitle">Ho ho, honey! What's the matter?</p>
+					</a>
+				</nav>
+			</div>
+			<div class="layers">
+				<div class="layers__item">
+					<div class="layers__item-img" style="background-image: url(img/1.jpg)"></div>
+				</div>
+				<div class="layers__item">
+					<div class="layers__item-img" style="background-image: url(img/2.jpg)"></div>
+				</div>
+				<div class="layers__item">
+					<div class="layers__item-img" style="background-image: url(img/3.jpg)"></div>
+				</div>
+				<div class="layers__item">
+					<div class="layers__item-img" style="background-image: url(img/4.jpg)"></div>
+				</div>
+				<div class="layers__item">
+					<div class="layers__item-img" style="background-image: url(img/9.jpg)"></div>
+				</div>
+				<div class="layers__item">
+					<div class="layers__item-img" style="background-image: url(img/6.jpg)"></div>
+				</div>
+				<div class="layers__item">
+					<div class="layers__item-img" style="background-image: url(img/7.jpg)"></div>
+				</div>
+				<div class="layers__item">
+					<div class="layers__item-img" style="background-image: url(img/8.jpg)"></div>
+				</div>
+				<div class="layers__item">
+					<div class="layers__item-img" style="background-image: url(img/5.jpg)"></div>
+				</div>
+				<div class="layers__item">
+					<div class="layers__item-img" style="background-image: url(img/10.jpg)"></div>
+				</div>
+			</div>
+		</main>
+		<svg class="cursor" width="220" height="220" viewBox="0 0 220 220">
+			<defs>
+				<filter id="filter-1" x="-50%" y="-50%" width="200%" height="200%" 
+				filterUnits="objectBoundingBox">
+					<feTurbulence type="fractalNoise" baseFrequency="0" numOctaves="1" result="warp" />
+					<feOffset dx="-30" result="warpOffset" />
+					<feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="30" in="SourceGraphic" in2="warpOffset" />
+				</filter>
+			</defs>
+			<circle class="cursor__inner" cx="110" cy="110" r="60"/>
+		</svg>
+		<script src="js/index.js"></script>
+	</body>
+</html>
