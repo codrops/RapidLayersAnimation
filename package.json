@@ -1,7 +1,7 @@
 {
-  "name": "RevealRevealReveal",
+  "name": "RapidLayersAnimation",
   "version": "1.0.0",
-  "description": "Demo showing how to animate SVG text on a path on scroll using the Intersection Observer API and SVG filters.",
+  "description": "A rapid layers animation of images as a splash intro or page transition on a website.",
   "main": "index.js",
   "scripts": {
     "start": "parcel src/index.html --open",
@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/codrops/[NAME].git"
+    "url": "git://github.com/codrops/RapidLayersAnimation.git"
   },
   "keywords": [],
   "author": "Codrops",
   "license": "MIT",
   "homepage": "[HOMEPAGE]",
   "bugs": {
-    "url": "https://github.com/codrops/[NAME]/issues"
+    "url": "https://github.com/codrops/RapidLayersAnimation/issues"
   },
   "dependencies": {
     "gsap": "^3.2.6",
